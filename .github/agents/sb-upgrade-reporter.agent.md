@@ -217,11 +217,18 @@ Generate `UPGRADE_REPORT.md` with the following structure:
 | Version Detection | ✅ Complete | |
 | Documentation Review | ✅ Complete | |
 | Pre-Upgrade Vulnerability Scan | ✅ Complete | |
-| Dependency Upgrade | ✅ Complete | |
+| OpenRewrite Automated Migration | ✅/⚠️/❌ | [✅ Success / ⚠️ Partial / ❌ Skipped] |
+| Manual Dependency Cleanup | ✅ Complete | |
 | Jakarta EE Migration | ✅/⚠️/N/A | |
 | Test Update | ✅ Complete | |
 | Test Run | ✅/⚠️ | [N passed, N failed] |
 | Post-Upgrade Vulnerability Scan | ✅ Complete | |
+
+### Automation Summary
+**OpenRewrite**: [Used / Not Used]
+- If used: List files modified by OpenRewrite (obtain from rewrite run output)
+- If not used: Explain why (e.g., build system not supported, network issue)
+
 
 ---
 
@@ -232,6 +239,7 @@ Generate `UPGRADE_REPORT.md` with the following structure:
 - [Spring Framework 7.0 Upgrade Notes](https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-7.x)
 - [Spring Security Release Notes](https://docs.spring.io/spring-security/reference/whats-new.html)
 - [Jakarta EE Migration Guide](https://jakarta.ee/resources/#documentation)
+- [OpenRewrite Spring Boot 4.0 Recipe](https://docs.openrewrite.org/recipes/java/spring/boot4/upgradespringboot_4_0-community-edition)
 
 ---
 
